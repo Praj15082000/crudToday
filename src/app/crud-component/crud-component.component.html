@@ -1,0 +1,17 @@
+<p>crud-component works!</p>
+<div>
+  <form>
+    <div class="form-group">
+    <!-- <label for="id">Enter Id</label>
+    <input type="number" [(ngModel)] = "" placeholder="name"> -->
+    <label for="name">Enter Name</label>
+    <input type="text" [(ngModel)]="name" [ngModelOptions]= "{standalone:true}" class="form-control" placeholder="name">
+    <label for="phoneNumber">Enter Number</label>
+    <input type="number" [(ngModel)]="phoneNumber" [ngModelOptions]= "{standalone:true}" placeholder="8755685475">
+    <!-- <label for="date">Enter Date</label>
+    <input type="date" placeholder="123352"> -->
+
+    <button type="submit" (click)="post()">Submit</button>
+  </div>
+  </form>
+</div>
